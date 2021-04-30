@@ -27,7 +27,7 @@ image.changeAngle = uicontrol ('style','slider','min',0,'max',90,'units','normal
 
 %Create UIControl to initiate calculation after said parameters are reached
 image.calc = uicontrol ('style','pushbutton','units','normalized','position',...
-    [.75 .007 .25 .15],'string','calculate','callback', {@calcEquation, image.distance, image.time});
+    [.75 .007 .25 .15],'string','calculate','callback', {@calcEquation});
 
 %Create Output text boxes displaying the final distance 'x' and the final
 %time 't'. Maybe use pop-ups?
@@ -43,6 +43,7 @@ end
 
 function [] = calcEquation (source,event, velocity, angle)
 global image;
-image.distance = (velocity^2 *sin(2*angle))/9.8;
-image.time = (2*velocity*sin(angle))/9.8;
+t = (2*velocity*sind(angle)/9.8);
+image.distance = (velocity * sind(angle) *t);
+image.time = t;
 end

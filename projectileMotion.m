@@ -43,6 +43,7 @@ end
 
 function [] = calcEquation (source,event, velocity, angle)
 global image;
-image.distance = (velocity^2 *sin(2*angle))/9.8;
-image.time = (2*velocity*sin(angle))/9.8;
+t = (2*velocity*sind(angle)/9.8);
+image.distance = (velocity * cosd(angle) *t);
+image.time = t;
 end
