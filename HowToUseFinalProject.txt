@@ -1,0 +1,20 @@
+Using our GUI is actually quite simple. In all reallity all 
+that must be done is to first take the code from GitHub and 
+paste it into a new tab on matlab. Then save the file as 
+projectileMotion. Then simply type projectileMotion into the 
+command window. 
+
+Once this is done there will be a figure that pops up on
+the screen. The display will have a big white blank graph 
+in the center of the screen. Under it will be two sliders, 
+one for Initial Velocity and one for Launch Angle. Next 
+to these two sliders are two zeros. And next to those is a 
+big calculate button. In order to use the figure slide the 
+Initial Velocity slider to the desired value, with a 
+maximum of 500 m/s, and slide the Launch Angle Slider to the
+desired value with a maximum of 90 degrees. Then select 
+calculate and a graph will appear before you. If you want 
+to see any values on the graph, simply drag your cursor to 
+the point that you want to select and left click on it. This 
+will then display the vertical and horizontal distance of the 
+object. 
